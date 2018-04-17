@@ -3,7 +3,7 @@
 # Análisis y Visualización de Imágenes
 
 
-## Requisitos de Instalación [^1]
+## Requisitos de Instalación [^1](Tomado del curso de la Diplomatura de Datos de FAMAF:)
 
 Hay dos manejadores principales de paquetes para Python: conda y pip. Para este curso les recomendamos usar conda, ya que funciona también como un manejador de entornos (como virtualenv). Además de ello, las notebooks estarán escritas para Python 3.5.
 
