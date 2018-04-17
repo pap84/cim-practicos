@@ -1,6 +1,6 @@
 ### Imágenes radiológicas en el ámbito clínico - 2018 - FaMAF - UNC
 
-# Análisis y Visualización de Imágenes
+# Operaciones básicas sobre imágenes
 
 
 ## Requisitos de Instalación <sup>1</sup>
@@ -34,6 +34,7 @@ Si prefieren utilizar otro manejador de paquetes distinto de conda, las librerí
 
 Los datasets con los que estaremos trabajando se encuentran en https://cs.famaf.unc.edu.ar/~mteruel/datasets/diplodatos. Son pequeños, pero si quieren pueden llevarlos previamente descargados. -->
 
+
 <sup>1</usp> Tomado del curso de la Diplomatura de Datos de FAMAF: https://github.com/DiploDatos/AnalisisyVisualizacion/blob/master/README.md
 
-<sup>2</sup> En MacOS o Windows hay que tener en cuenta que en el presente texto se descarga el instalador para Linuz de `conda`.
+<sup>2</sup> En MacOS o Windows hay que tener en cuenta que en el presente texto se descarga el instalador para Linux de `conda`.
