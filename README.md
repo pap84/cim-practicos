@@ -12,7 +12,7 @@ Para configurar el entorno de trabajo con jupyter y todas las herramientas neces
 ```
 $ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 $ bash Miniconda3-latest-Linux-x86_64.sh
-$ conda create --name imagenes-ayv python=3.5 numpy scipy jupyter nb_conda
+$ conda create --name imagenes-ayv python=3.5 numpy scipy jupyter nb_conda pil
 $ source activate imagenes-ayv
 ```
 
@@ -28,6 +28,7 @@ Si prefieren utilizar otro manejador de paquetes distinto de conda, las librerí
 * numpy
 * pandas
 * seaborn
+* PIL
 
 
 <!-- ## Datasets
