@@ -25,16 +25,16 @@ $ jupyter notebook
 En caso que algún paquete no se encuentre instalado, puede instalarse con el comando:
 
 ```
-$ conda install <nomre-del-paquete>
+$ conda install <nombre-del-paquete>
 ```
 
 Si prefieren utilizar otro manejador de paquetes distinto de conda, las librerías que utilizaremos son:
 
-* matplotlib
-* numpy
-* scipy
-* pandas
-* seaborn
+* [matplotlib](https://matplotlib.org)
+* [numpy](http://www.numpy.org)
+* [scipy](https://www.scipy.org/getting-started.html)
+* [pandas](https://pandas.pydata.org)
+* [seaborn](https://seaborn.pydata.org)
 * [pillow](http://pillow.readthedocs.io/en/3.1.x/handbook/tutorial.html)
 
 
