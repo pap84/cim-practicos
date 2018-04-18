@@ -7,7 +7,7 @@
 
 Hay dos manejadores principales de paquetes para Python: conda y pip. Para este curso les recomendamos usar conda, ya que funciona también como un manejador de entornos (como virtualenv). Además de ello, las notebooks estarán escritas para Python 3.5.
 
-Para configurar el entorno de trabajo con jupyter y todas las herramientas necesarias para este curso (en Linux <sup>2</sup> ), pueden ejecutar los siguientes comandos:
+Para configurar el entorno de trabajo con jupyter y todas las herramientas necesarias para este curso (en Linux de 64 bits <sup>2</sup> ), pueden ejecutar los siguientes comandos:
 
 ```
 $ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
@@ -39,4 +39,4 @@ Los datasets con los que estaremos trabajando se encuentran en https://cs.famaf.
 
 <sup>1</sup> Tomado del curso de la Diplomatura de Datos de FAMAF: https://github.com/DiploDatos/AnalisisyVisualizacion/blob/master/README.md
 
-<sup>2</sup> En MacOS o Windows hay que tener en cuenta que en el presente texto se descarga el instalador para Linux de `conda`.
+<sup>2</sup> En MacOS, Windows o Linux de 32 bits hay que tener en cuenta que en el presente texto se descarga el instalador de `Miniconda3` para Linux de 64 bits.
