@@ -12,7 +12,7 @@ Para configurar el entorno de trabajo con jupyter y todas las herramientas neces
 ```
 $ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 $ bash Miniconda3-latest-Linux-x86_64.sh
-$ conda create --name imagenes-ayv python=3.5 numpy scipy jupyter nb_conda seaborn pandas matplotlib
+$ conda create --name imagenes-ayv python=3.5 numpy scipy jupyter nb_conda seaborn pandas matplotlib pillow
 $ source activate imagenes-ayv
 ```
 
@@ -22,6 +22,12 @@ Una vez que hayan activado el environment y clonado este repositorio, en este mi
 $ jupyter notebook
 ```
 
+En caso que algún paquete no se encuentre instalado, puede instalarse con el comando:
+
+```
+$ conda install <nomre-del-paquete>
+```
+
 Si prefieren utilizar otro manejador de paquetes distinto de conda, las librerías que utilizaremos son:
 
 * matplotlib
@@ -29,7 +35,7 @@ Si prefieren utilizar otro manejador de paquetes distinto de conda, las librerí
 * scipy
 * pandas
 * seaborn
-* PIL
+* [pillow](http://pillow.readthedocs.io/en/3.1.x/handbook/tutorial.html)
 
 
 <!-- ## Datasets
