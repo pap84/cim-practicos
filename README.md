@@ -12,7 +12,7 @@ Para configurar el entorno de trabajo con jupyter y todas las herramientas neces
 ```
 $ wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
 $ bash Miniconda3-latest-Linux-x86_64.sh
-$ conda create --name imagenes-ayv python=3.5 numpy scipy jupyter nb_conda seaborn pandas
+$ conda create --name imagenes-ayv python=3.5 numpy scipy jupyter nb_conda seaborn pandas matplotlib
 $ source activate imagenes-ayv
 ```
 
@@ -26,6 +26,7 @@ Si prefieren utilizar otro manejador de paquetes distinto de conda, las librerí
 
 * matplotlib
 * numpy
+* scipy
 * pandas
 * seaborn
 * PIL
@@ -36,6 +37,6 @@ Si prefieren utilizar otro manejador de paquetes distinto de conda, las librerí
 Los datasets con los que estaremos trabajando se encuentran en https://cs.famaf.unc.edu.ar/~mteruel/datasets/diplodatos. Son pequeños, pero si quieren pueden llevarlos previamente descargados. -->
 
 
-<sup>1</usp> Tomado del curso de la Diplomatura de Datos de FAMAF: https://github.com/DiploDatos/AnalisisyVisualizacion/blob/master/README.md
+<sup>1</sup> Tomado del curso de la Diplomatura de Datos de FAMAF: https://github.com/DiploDatos/AnalisisyVisualizacion/blob/master/README.md
 
 <sup>2</sup> En MacOS o Windows hay que tener en cuenta que en el presente texto se descarga el instalador para Linux de `conda`.
