@@ -20,9 +20,8 @@ En caso que se hayan realizado cambios en el repositorio local, solicitará que 
 
 Para subir, es necesario el comando seguir los pasos de `add` - `commit` - `push`.
 
-    ``git add *
-      git commit -m 'mensaje relativo a los cambios'
-      git push origin master
-    ``
+    `git add *
+     git commit -m 'mensaje relativo a los cambios'
+     git push origin master`
 
 
