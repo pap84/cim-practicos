@@ -1,0 +1,38 @@
+* Set the defaults for precision simulations
+DEFAULTS                                                              PRECISIO
+* Define the beam characteristics
+BEAM           -0.01                 0.0       0.1       0.1        1.PHOTON
+* Define the beam position
+BEAMPOS          0.0       0.0       0.0
+GEOBEGIN                                                              COMBNAME
+    0    0          
+* Black body
+SPH blkbody    0.0 0.0 0.0 10000.
+* Void sphere
+SPH void       0.0 0.0 0.0 1000.
+* El origen de coordenadas se encuentra en el centro de una de las caras del fantoma (cubo de agua)
+#define  
+RPP unive      -100. 100. -100. 100. -100. 100.
+* El cubo de agua donde sucede la interaccion
+RPP fantoma    -10. 10. -10. 10. 0.0 20.
+END
+* Black hole
+BLKBODY      5 +blkbody -void
+* Void around
+VOID         5 +void -unive
+UNIVERSE     5 +unive -fantoma
+Agua         5 +fantoma
+END
+GEOEND
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+ASSIGNMA    BLCKHOLE   BLKBODY
+ASSIGNMA      VACUUM      VOID
+ASSIGNMA         AIR  UNIVERSE
+ASSIGNMA       WATER      Agua
+* Set the random number seed
+RANDOMIZ          1.
+* Set the number of primary histories to be simulated in the run
+START        100000.
+USRBIN           10.    PHOTON      -22.       15.       15.       25.FluFot
+USRBIN          -15.      -15.       -5.      250.      250.      250. &
+STOP

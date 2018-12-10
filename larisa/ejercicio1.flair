@@ -1,0 +1,116 @@
+#!/usr/local/flair/flair
+# FLUKA Project file
+Version: 2
+Title: Geometria definitiva
+Input: ejercicio1.inp
+Submit: *Default
+Tabs: 0.1 0.32 0.56 0.81 1.0
+Page: Run
+DefMain: True
+LinkPrg: lfluka
+F77bound: True
+F77dline: False
+
+# Run information
+Run: <default>
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1544376267
+End
+
+# Run information
+Run: ejercicio1-1
+	Title:    prueba1
+	Define:   
+	Rnd:      1437811749
+	Start:    1000000
+	Time:     10000
+	Prev:     0
+	Last:     5
+	Status:   3
+	Pid:      0
+	StartRun: 1544468019
+End
+
+# Material
+Material: madera
+	alpha: 0
+	color: #B010D0
+	fuzz: 0.0
+	ior: 1.0
+	shine: 10.0
+	specular: 0.0
+End
+
+# Geometry Information
+Geometry:
+	Frame.bsplit: 0.5
+	Frame.tsplit: 0.01
+	Frame.vsplit: 0.99
+End
+
+# Geometry plot "GeoViewer Red plot"
+Plot: Red
+	Format: .eps
+	Type:   Geometry
+	basisu: 1 0 0
+	basisv: 0 1 0
+	boundaries: 1
+	coord: X-Y
+	extends: 144 9828
+	labels: 1
+	layer: Media
+	origin: 168.218 44.6315 0
+	subtype: Material
+	title: GeoViewer Red plot
+End
+
+# Geometry plot "GeoViewer Green plot"
+Plot: Green
+	Format: .eps
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 1 0 0
+	boundaries: 1
+	coord: Z-X
+	extends: 248.832 136.682
+	labels: 1
+	layer: Media
+	origin: 20.4366 0 -46.8428
+	subtype: Material
+	title: GeoViewer Green plot
+End
+
+# Geometry plot "GeoViewer Blue plot"
+Plot: Blue
+	Format: .eps
+	Type:   Geometry
+	basisu: 0 0 1
+	basisv: 0 1 0
+	boundaries: 1
+	coord: Z-Y
+	extends: 1283.92 2.56271
+	labels: 1
+	layer: Media
+	origin: 0 -61.4409 -335.562
+	subtype: Material
+	title: GeoViewer Blue plot
+End
+
+# Geometry plot "GeoViewer Magenta plot"
+Plot: Magenta
+	Format: .eps
+	Type:   Geometry
+	basisu: -1 0 0
+	basisv: 0 1 0
+	boundaries: 1
+	coord: X-Y
+	extends: 1069.93 2.13559
+	labels: 1
+	layer: Media
+	origin: -65.8237 -11.616 0
+	subtype: Material
+	title: GeoViewer Magenta plot
+End
